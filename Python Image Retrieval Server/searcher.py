@@ -37,7 +37,7 @@ def index():
         dists = np.linalg.norm(features - query, axis=1)
 
         # 가장 유사한 이미지 10개를 추출하여 JSON 형식으로 반환합니다.
-        ids = np.argsort(dists)[:10] # Top 30 results
+        ids = np.argsort(dists)[:10]
         result = {
             "scores": [
                 ({"id": str(dists[id]), "path": img_paths[id]}) for id in ids
