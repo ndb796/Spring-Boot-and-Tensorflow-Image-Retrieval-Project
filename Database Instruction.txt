@@ -1,0 +1,4 @@
+CREATE TABLE CHAIR (
+  chairID INT,
+  imagePath VARCHAR(2048)
+);
